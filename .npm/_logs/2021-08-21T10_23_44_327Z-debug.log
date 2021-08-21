@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'pack',
+1 verbose cli   '/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark'
+1 verbose cli ]
+2 info using npm@6.14.8
+3 info using node@v12.20.0
+4 verbose npm-session 5313f3bcdbef62b7
+5 silly pacote directory manifest for undefined@file:/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark fetched in 9ms
+6 info lifecycle cainvas-theme-dark@0.1.0~prepublish: cainvas-theme-dark@0.1.0
+7 info lifecycle cainvas-theme-dark@0.1.0~prepare: cainvas-theme-dark@0.1.0
+8 verbose lifecycle cainvas-theme-dark@0.1.0~prepare: unsafe-perm in lifecycle true
+9 verbose lifecycle cainvas-theme-dark@0.1.0~prepare: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark/node_modules/.bin:/opt/tljh/user/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+10 verbose lifecycle cainvas-theme-dark@0.1.0~prepare: CWD: /home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark
+11 silly lifecycle cainvas-theme-dark@0.1.0~prepare: Args: [ '-c', 'npm run clean && npm run build' ]
+12 silly lifecycle cainvas-theme-dark@0.1.0~prepare: Returned: code: 1  signal: null
+13 info lifecycle cainvas-theme-dark@0.1.0~prepare: Failed to exec prepare script
+14 verbose stack Error: cainvas-theme-dark@0.1.0 prepare: `npm run clean && npm run build`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+14 verbose stack     at EventEmitter.emit (events.js:314:20)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+14 verbose stack     at ChildProcess.emit (events.js:314:20)
+14 verbose stack     at maybeClose (internal/child_process.js:1022:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
+15 verbose pkgid cainvas-theme-dark@0.1.0
+16 verbose cwd /tmp/tmpu1_ncijr
+17 verbose Linux 5.4.0-1030-aws
+18 verbose argv "/usr/bin/node" "/usr/bin/npm" "pack" "/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark"
+19 verbose node v12.20.0
+20 verbose npm  v6.14.8
+21 error code ELIFECYCLE
+22 error errno 1
+23 error cainvas-theme-dark@0.1.0 prepare: `npm run clean && npm run build`
+23 error Exit status 1
+24 error Failed at the cainvas-theme-dark@0.1.0 prepare script.
+24 error This is probably not a problem with npm. There is likely additional logging output above.
+25 verbose exit [ 1, true ]

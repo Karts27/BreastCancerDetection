@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JupyterHub</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="/hub/static/css/style.min.css?v=05d37a1f6ef9f36e820dba9b94edaa61c84e7bd7863806e28aaf9d8e18ec0af3668535dfb8dba910b6aad40a78acf2f310d633cdad977a3d7840d928c5cefb73" type="text/css"/>
+    
+    
+    <script src="/hub/static/components/requirejs/require.js?v=bd1aa102bdb0b27fbf712b32cfcd29b016c272acf3d864ee8469376eaddd032cadcf827ff17c05a8c8e20061418fe58cf79947049f5c0dff3b4f73fcc8cad8ec" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/jquery/dist/jquery.min.js?v=6e722fce1e8553be592b1a741972c7f5b7b0cdafce230e9d2d587d20283482881c96660682e4095a5f14df45a96ec193a9b222030c53b1b7bbe8312b2eae440d" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/bootstrap/dist/js/bootstrap.min.js?v=a014e9acc78d10a0a7a9fbaa29deac6ef17398542d9574b77b40bf446155d210fa43384757e3837da41b025998ebfab4b9b6f094033f9c226392b800df068bce" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+      require.config({
+          
+          urlArgs: "v=20210820101945",
+          
+          baseUrl: '/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/hub/",
+        prefix: "/",
+        
+        
+        admin_access: false,
+        
+        
+        options_form: false,
+        
+      }
+    </script>
+
+    
+    
+
+</head>
+
+<body>
+
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+        <span id="jupyterhub-logo" class="pull-left">
+            <a href="/hub/"><img src='/hub/logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a>
+        </span>
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#thenavbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="thenavbar">
+        
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li>
+              
+
+            </li>
+          
+        </ul>
+      </div>
+
+      
+      
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+<div id="login-main" class="container">
+
+<div class="service-login">
+  <a role="button" class='btn btn-jupyter btn-lg' href='https://cainvas.ai-tech.systems/accounts/login?next=%2Fhub%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3Djupyterhub-user-kkharbanda90%26redirect_uri%3D%252Fuser%252Fkkharbanda90%252Foauth_callback%26response_type%3Dcode%26state%3DeyJ1dWlkIjogImM2YTQ3NWIxZTg2ZDQzZTE4OGM1NDFkNTE4NjM1ZGQ0IiwgIm5leHRfdXJsIjogIi91c2VyL2traGFyYmFuZGE5MC9sYWIvL2hvbWUvanVweXRlci1ra2hhcmJhbmRhOTAvZGF0YS56aXAifQ'>
+    Sign in with Cainvas
+  </a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="modal fade" id="error-dialog" tabindex="-1" role="dialog" aria-labelledby="error-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="error-label">Error</h4>
+      </div>
+      <div class="modal-body">
+        
+  <div class="ajax-error">
+    The error
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+if (window.location.protocol === "http:") {
+  // unhide http warning
+  var warning = document.getElementById('insecure-login-warning');
+  warning.className = warning.className.replace(/\bhidden\b/, '');
+}
+</script>
+
+
+
+</body>
+
+</html>

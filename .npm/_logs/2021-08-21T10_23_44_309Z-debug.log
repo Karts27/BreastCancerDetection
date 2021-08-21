@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'clean' ]
+2 info using npm@6.14.8
+3 info using node@v12.20.0
+4 verbose run-script [ 'preclean', 'clean', 'postclean' ]
+5 info lifecycle cainvas-theme-dark@0.1.0~preclean: cainvas-theme-dark@0.1.0
+6 info lifecycle cainvas-theme-dark@0.1.0~clean: cainvas-theme-dark@0.1.0
+7 verbose lifecycle cainvas-theme-dark@0.1.0~clean: unsafe-perm in lifecycle true
+8 verbose lifecycle cainvas-theme-dark@0.1.0~clean: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark/node_modules/.bin:/usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark/node_modules/.bin:/opt/tljh/user/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+9 verbose lifecycle cainvas-theme-dark@0.1.0~clean: CWD: /home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark
+10 silly lifecycle cainvas-theme-dark@0.1.0~clean: Args: [ '-c', 'rimraf lib && rimraf static && rimraf tsconfig.tsbuildinfo' ]
+11 silly lifecycle cainvas-theme-dark@0.1.0~clean: Returned: code: 1  signal: null
+12 info lifecycle cainvas-theme-dark@0.1.0~clean: Failed to exec clean script
+13 verbose stack Error: cainvas-theme-dark@0.1.0 clean: `rimraf lib && rimraf static && rimraf tsconfig.tsbuildinfo`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:314:20)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:314:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1022:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
+14 verbose pkgid cainvas-theme-dark@0.1.0
+15 verbose cwd /home/ubuntu/cainvas/deploy/resources/jupyterlab/theme-extensions/cainvas-theme-dark
+16 verbose Linux 5.4.0-1030-aws
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "clean"
+18 verbose node v12.20.0
+19 verbose npm  v6.14.8
+20 error code ELIFECYCLE
+21 error errno 1
+22 error cainvas-theme-dark@0.1.0 clean: `rimraf lib && rimraf static && rimraf tsconfig.tsbuildinfo`
+22 error Exit status 1
+23 error Failed at the cainvas-theme-dark@0.1.0 clean script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
